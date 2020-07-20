@@ -1,0 +1,25 @@
+{
+  "name": "testb",
+  "version": "1.0.0",
+  "description": "test b",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test in json specified\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikpusch/testb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikpusch/testb/issues"
+  },
+  "homepage": "https://github.com/mikpusch/testb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25",
+    "multer": "^1.4.2"
+  }
+}
