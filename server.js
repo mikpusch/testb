@@ -15,11 +15,13 @@ app.use(express.static(__dirname + '/public'));
 
 var mongoose = require('mongoose');
 
-console.log(process.env.SystemRoot.toUpperCase());
+if (process.env.SystemRoot){
+	console.log(process.env.SystemRoot.toUpperCase());
 
-if (process.env.SystemRoot.toUpperCase() == 'C:\\WINDOWS'){
-	console.log("LOCAL");
-	local = true;
+	if (process.env.SystemRoot.toUpperCase() == 'C:\\WINDOWS'){
+		console.log("LOCAL");
+		local = true;
+	}
 }
 else{
 	console.log("Remote");
